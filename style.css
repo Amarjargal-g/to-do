@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Inter", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+}
+.container{
+    width: 377px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.task{
+    display: flex;
+    width:180px;
+    justify-content: space-between;
+}
+
+  #task-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+}
+h1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+ 
+}
+.input-group{
+    display: flex;
+    gap: 10px;
+}
+#input{
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid  #E4E4E7;
+    width: 280px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.filters button {
+  padding: 8px 14px;
+  margin-left: 20px;
+  margin-bottom: 24px;
+  background: #e0e0e0;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 32px;
+  
+}
+
+#add{
+    background: #3C82F6;
+    color: white;
+    width: 59px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+#active,
+#completed {
+  background: #e0e0e0;
+  color: black;
+}
+
+.filters button:hover {
+    background: #3C82F6;
+    color: white;
+}
+.filters button.active {
+  background: #3C82F6;
+  color: white;
+}
+
+
+
+/* .task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} */
+.task_text {
+    flex: 1;
+    font-size: 14px;
+}
+
+.task_checkbox{
+    cursor: pointer;
+}
+.task_delete{
+    border: none;
+    background: none;
+    color: red;
+    cursor: pointer;
+}
+
+.task.completed  .task_text{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+#clear-completed {
+    padding: 6px 12px;
+    border: none;
+    background: none;
+    border-radius: 6px;
+    color: red;
+    cursor: pointer;
+
+}
+
+#empty-message {
+    font-size: 13px;
+    color: gray;
+    text-align: center;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+    padding-bottom: 20px;
+}
+.footer a {
+   
+  color:  #2979ff; 
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
